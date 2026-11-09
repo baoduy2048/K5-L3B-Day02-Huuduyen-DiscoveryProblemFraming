@@ -299,9 +299,10 @@ Người kiểm tra: Tài xế trực tiếp đánh giá tính chính xác của
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 |Nhận diện đúng |Nhận diện và phát cảnh báo đúng các chuỗi sự kiện buồn ngủ thực sự khớp với dữ liệu đã gán nhãn | Bỏ sót các sự kiện tài xế ngủ gật chớp nhoáng do hệ thống phân tích chuỗi thời gian kém|
+| 2 | Không cảnh báo sai| Phân biệt được và bỏ qua các dấu hiệu đơn lẻ bình thường|Hệ thống liên tục hú còi báo động giả (nhận nhầm hành vi bình thường thành buồn ngủ), gây ức chế cho tài xế |
+| 3 |Độ trễ thấp |Hệ thống tổng hợp đủ bằng chứng từ chuỗi tín hiệu và phát cảnh báo ngay trước khi tài xế mất kiểm soát | Cảnh báo phát ra quá muộn, khi xe đã chệch làn hoặc tài xế đã tự giật mình tỉnh lại|
+| 4 | Tính ổn định|Duy trì được khả năng nhận diện điểm neo khuôn mặt trong điều kiện thực tế khắc nghiệt: cabin tối (ban đêm), ánh sáng ngược chói, hoặc tài xế đeo kính/khẩu trang | Trạng thái mắt/miệng bị nhận diện sai lệch hoàn toàn khi góc camera rung lắc hoặc khi thay đổi điều kiện ánh sáng đột ngột|
 
 ---
 
