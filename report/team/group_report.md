@@ -5,7 +5,7 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Huuduyen
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu):
 - Quyết định cuối: Go / Not Yet / No-Go
@@ -78,16 +78,12 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+| 1 | Tài xế đường dài thực sự gặp tình trạng buồn ngủ trong quá trình lái xe và đây là vấn đề đáng quan tâm | Value | 5 | 2 | ✅ |
+| 2 | Tài xế thường không nhận biết đủ sớm mức độ buồn ngủ của bản thân để chủ động nghỉ ngơi | Value | 5 | 1 | ✅ |
+| 3 | Mô hình có thể duy trì độ chính xác trong các điều kiện khác nhau như ban ngày, ban đêm, đeo kính và thay đổi góc camera | Feasibility | 5 | 1 | ✅ |
+| 4 | Kết hợp nhiều dấu hiệu theo thời gian giúp phân biệt buồn ngủ với hành vi bình thường tốt hơn một tín hiệu đơn lẻ | Feasibility | 5 | 2 | ✅ |
+| 5 | Việc thu thập và xử lý video khuôn mặt tài xế có thể đáp ứng yêu cầu về quyền riêng tư và chính sách dữ liệu | Viability | 5 | 1 | ✅ |
+| 6 | Tài xế và doanh nghiệp vận tải sẵn sàng sử dụng hệ thống cảnh báo trong quá trình vận hành thực tế | Viability | 4 | 1 | ✅ |
 
 ### 3.2. Kiểm chứng
 
@@ -127,40 +123,96 @@ Tổng hợp:
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
+**Sơ đồ quy trình:**
 
 ```text
-
+[1. Bắt đầu chuyến đi]
+          ↓
+[2. Lái xe liên tục]
+          ↓
+[3. Tự cảm nhận mức độ tỉnh táo]
+          ↓
+[4. Nhận biết dấu hiệu mệt mỏi/buồn ngủ]
+          ↓
+[5. Tự quyết định tiếp tục lái hoặc tìm nơi an toàn để nghỉ]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Tài xế | Lịch trình, phương tiện, tình trạng sức khỏe | Bắt đầu chuyến đi | Đầu mỗi chuyến | Chuẩn bị và kiểm tra trước khi lái |
+| 2 | Tài xế | Tuyến đường, điều kiện giao thông | Tiếp tục điều khiển phương tiện | Liên tục trong chuyến đi | Có thể kéo dài nhiều giờ |
+| 3 | Tài xế | Cảm giác cơ thể, mức độ tỉnh táo | Tự đánh giá tình trạng hiện tại | Không cố định | Phụ thuộc vào khả năng tự nhận biết |
+| 4 | Tài xế | Dấu hiệu mỏi mắt, ngáp, nhắm mắt, mất tập trung | Nhận biết hoặc nghi ngờ bản thân đang buồn ngủ | Khi xuất hiện dấu hiệu | Có thể nhận biết muộn hoặc bỏ qua dấu hiệu |
+| 5 | Tài xế | Cảm nhận về mức độ buồn ngủ, lịch trình | Quyết định tiếp tục lái hoặc dừng nghỉ | Khi cảm thấy cần thiết | Có thể tiếp tục lái do áp lực thời gian hoặc thiếu điểm nghỉ |
 
 **Bottleneck chính:**
 
+Bước 3–5: Tài xế phải tự nhận biết và đánh giá mức độ buồn ngủ. Tuy nhiên, khi tình trạng mệt mỏi tăng lên, khả năng tự đánh giá có thể không còn đáng tin cậy. Tài xế cũng có thể bỏ qua dấu hiệu cảnh báo hoặc cố tiếp tục lái vì áp lực lịch trình, dẫn đến phát hiện muộn và tăng nguy cơ mất kiểm soát phương tiện.
+
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+**Sơ đồ quy trình:**
 
 ```text
-
+[1. Tài xế bắt đầu chuyến đi]
+          ↓
+[2. Camera ghi nhận khuôn mặt liên tục]
+          ↓
+[3. Trích xuất đặc trưng mắt, miệng, chuyển động đầu]
+          ← AI: Computer Vision / Facial Landmarks
+          ↓
+[4. Phân tích chuỗi tín hiệu theo thời gian]
+          ← AI: Temporal Analysis
+          ↓
+[5. Phân loại trạng thái và đánh giá nguy cơ buồn ngủ]
+          ← AI: Classification / Risk Scoring
+          ↓
+[6. Kiểm tra ngưỡng và quyết định phát cảnh báo]
+          ← RULE + AI
+          ↓
+[7. Tài xế tiếp nhận cảnh báo, đánh giá tình trạng
+    và chủ động dừng xe tại nơi an toàn để nghỉ]
+          ← CON NGƯỜI
 ```
+
+| Bước | Actor | Input | Output | Thời gian / tần suất | Phương pháp |
+|---:|---|---|---|---|---|
+| 1 | Tài xế | Phương tiện, lịch trình | Bắt đầu chuyến đi | Đầu mỗi chuyến | Con người |
+| 2 | Camera | Hình ảnh khuôn mặt tài xế | Video hoặc frame đầu vào | Liên tục | Rule / Thiết bị |
+| 3 | Hệ thống AI | Frame hình ảnh | Đặc trưng mắt, miệng, chuyển động đầu | Liên tục | AI – Computer Vision, Facial Landmarks |
+| 4 | Hệ thống AI | Chuỗi đặc trưng theo thời gian | Các mẫu hành vi và tín hiệu liên quan đến buồn ngủ | Liên tục | AI – Temporal Analysis |
+| 5 | Hệ thống AI | Các tín hiệu đã trích xuất | Nhãn trạng thái hoặc điểm nguy cơ buồn ngủ | Theo từng cửa sổ thời gian | AI – Classification / Risk Scoring |
+| 6 | Hệ thống cảnh báo | Điểm nguy cơ, ngưỡng cảnh báo, trạng thái hệ thống | Cảnh báo âm thanh hoặc hình ảnh | Khi đạt điều kiện cảnh báo | Rule + AI |
+| 7 | Tài xế | Cảnh báo và tình trạng thực tế | Quyết định giảm tốc, dừng xe và nghỉ ngơi | Khi nhận cảnh báo | Con người |
+
+**BOUNDARY:**
+
+- AI chỉ hỗ trợ nhận diện dấu hiệu và đánh giá nguy cơ buồn ngủ, không khẳng định chắc chắn trạng thái sinh lý của tài xế.
+- Không phát cảnh báo chỉ dựa trên một hành vi đơn lẻ như ngáp, nhắm mắt ngắn hoặc cúi đầu.
+- AI không tự điều khiển phương tiện, không tự quyết định dừng xe và không thay thế trách nhiệm của tài xế.
+- Video được ưu tiên xử lý trực tiếp trên thiết bị; không mặc định truyền lên cloud hoặc lưu trữ video khuôn mặt.
+- Khi camera không nhận diện được khuôn mặt hoặc dữ liệu đầu vào không đủ chất lượng, hệ thống phải thông báo trạng thái không khả dụng thay vì kết luận tài xế tỉnh táo.
+
+**PHƯƠNG ÁN QUAY VỀ:**
+
+- Camera mất tín hiệu hoặc AI gặp lỗi → Thông báo hệ thống không khả dụng.
+- Ánh sáng yếu, khuôn mặt bị che khuất hoặc góc camera không phù hợp → Thông báo hạn chế khả năng phát hiện.
+- AI phát hiện sai hoặc cảnh báo bất thường → Tài xế đánh giá tình trạng thực tế, không phụ thuộc hoàn toàn vào kết quả AI.
+- Hệ thống không thể hoạt động → Quay về quy trình tự giám sát và chủ động nghỉ ngơi theo lịch trình an toàn.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5 | 7 | Bổ sung các bước giám sát, phân tích và cảnh báo tự động |
+| Tổng thời gian | Không cố định | Giám sát liên tục, cảnh báo gần thời gian thực | Chưa có số liệu đo thực nghiệm |
+| Số bước thủ công | 5/5 | 2/7 | Tài xế bắt đầu chuyến đi và xử lý cảnh báo; các bước còn lại được hệ thống hỗ trợ tự động |
+| Bottleneck chính | Tài xế tự nhận biết và đánh giá mức độ buồn ngủ | AI phân biệt buồn ngủ với hành vi bình thường | Cần cân bằng Recall, false alarms/hour và độ trễ |
+| Rủi ro mới phát sinh | Phát hiện muộn, bỏ qua dấu hiệu buồn ngủ | Cảnh báo sai, bỏ sót, lỗi camera hoặc điều kiện môi trường | Cần kiểm thử thực tế, boundary và phương án quay về |
 
+**Nhận định:**
+
+Giá trị của quy trình tương lai không nằm ở việc giảm số bước hay giảm thời gian thao tác, mà ở việc chuyển từ tự giám sát hoàn toàn sang giám sát có AI hỗ trợ. Hệ thống hướng đến phát hiện dấu hiệu buồn ngủ sớm hơn, giảm phụ thuộc vào khả năng tự đánh giá của tài xế và cung cấp cảnh báo kịp thời để họ chủ động nghỉ ngơi. Đây là mục tiêu cần được kiểm chứng bằng thực nghiệm, không phải hiệu quả đã được chứng minh.
 ---
 
 ## 5. Problem Statement v0 (CP5)
