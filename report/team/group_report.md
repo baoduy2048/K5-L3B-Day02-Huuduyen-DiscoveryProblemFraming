@@ -275,33 +275,36 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Tài xế xe tải, xe khách hoặc tài xế đường dài. Người quản lý đội xe là bên có thể triển khai và theo dõi hiệu quả hệ thống|
-| **Quy trình** |1. Bắt đầu chuyến đi - Tự đánh giá mức độ tỉnh táo - 3. Quan sát dấu hiệu buồn ngủ/mỏi mắt - 4. Tự quyết định lái tiếp hay nghỉ - 5. Camera ghi nhận khuôn mặt - 6. Hệ thống phát cảnh báo khi vượt ngưỡng - 7. Tài xế quyết định giảm tốc/nghỉ ngơi |
-| **Bottleneck** |Bước 5–6: Việc nhận biết và phân biệt dấu hiệu buồn ngủ rất khó (nhắm mắt, ngáp riêng lẻ chưa chắc là buồn ngủ). Dựa vào một tín hiệu hoặc một khung hình tĩnh dễ dẫn đến cảnh báo sai hoặc bỏ sót |
-| **Impact** |Cảnh báo sai thường xuyên làm tài xế mất niềm tin và bỏ qua cảnh báo thật; trong khi đó, cảnh báo muộn khiến tài xế không còn đủ thời gian phản ứng an toàn |
-| **Success Metric** (baseline → target, cách đo) |1. Đạt Recall mục tiêu với các sự kiện buồn ngủ đã gán nhãn
-2. Giảm số cảnh báo sai (false positive) trên mỗi giờ lái xe
-3. Giảm độ trễ từ khi có dấu hiệu đến khi phát cảnh báo
-4. Duy trì độ chính xác trong nhiều điều kiện ánh sáng và góc camera |
-| **Boundary** | AI chỉ phân tích chuỗi tín hiệu để đánh giá rủi ro và phát cảnh báo. AI không trực tiếp can thiệp vào việc điều khiển xe (phanh, đánh lái), tài xế vẫn là người đưa ra quyết định cuối cùng|
-| **AI intervention point** |Can thiệp ở bước 5-6: AI thực hiện phân tích chuỗi thời gian (temporal analysis) dựa trên trạng thái mắt, miệng, chuyển động đầu để đưa ra cảnh báo đáng tin cậy thay vì phản ứng với một dấu hiệu đơn lẻ |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** |Rủi ro: Cảnh báo sai làm phiền tài xế hoặc bỏ sót dấu hiệu nguy hiểm
-Người kiểm tra: Tài xế trực tiếp đánh giá tính chính xác của cảnh báo trên xe và người quản lý đội xe theo dõi log dữ liệu để đánh giá hiệu quả tổng thể của hệ thống |
+| **Actor** | Tài xế điều khiển phương tiện (người dùng cuối trực tiếp) và người quản lý an toàn đội xe|
+| **Quy trình** |Bắt đầu lái xe → Camera ghi hình liên tục → AI phân tích chuỗi hành vi → Đạt ngưỡng nguy hiểm → Phát cảnh báo → Tài xế quyết định giảm tốc/nghỉ ngơi |
+| **Bottleneck** |Tài xế không thể tự nhận thức được khoảnh khắc ngủ gật chớp nhoáng hoặc sự suy giảm tập trung diễn ra từ từ. Đợi đến lúc tài xế tự nhận ra thì đã quá muộn |
+| **Impact** |Nguy cơ tai nạn giao thông nghiêm trọng gây thiệt hại sinh mạng và tài sản. Tăng chi phí bảo hiểm và rủi ro pháp lý cho doanh nghiệp vận tải |
+| **Success Metric** (baseline → target, cách đo) |Baseline: Hoàn toàn dựa vào cảm giác chủ quan của tài xế
+Target:
+(1) Recall ≥ 90% (bắt đúng các ca buồn ngủ).
+(2) False Alarm ≤ 1 lần/giờ lái xe.
+(3) Độ trễ (Latency) ≤ 2 giây từ lúc có biểu hiện đến lúc hú còi.
+Cách đo: Lắp camera chạy thử nghiệm thực tế nghiệm. Quản lý đội xe đối chiếu video log với thời điểm AI phát cảnh báo để tính các chỉ số |
+| **Boundary** | AI không can thiệp vào hệ thống lái/phanh của xe. AI không kết luận tài xế buồn ngủ chỉ qua 1 cú ngáp hay 1 cái chớp mắt đơn lẻ. Nếu camera bị che khuất hoặc thiếu sáng trầm trọng, AI phải báo "Hệ thống không khả dụng"|
+| **AI intervention point** |Nằm ở bước số 4 và 5: AI can thiệp vào khâu phân tích dữ liệu video theo thời gian thực (ngay trên thiết bị trong cabin) và đối chiếu ngưỡng để kích hoạt cảnh báo, thay thế cho việc tài xế phải "tự cảm nhận" độ tỉnh táo của mình |
+| **Mức chọn** | Workflow|
+| **Rủi ro & người kiểm tra** |Rủi ro: Cảnh báo sai (False Positive) gây ức chế tâm lý khiến tài xế tắt thiết bị; hoặc bỏ sót (False Negative) gây tai nạn.
+Người kiểm tra: Tài xế kiểm tra chéo ngay lúc nhận cảnh báo + Quản lý đội xe hậu kiểm lại log video |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+|Actor |Chỉ có tài xế|Thêm "người quản lý an toàn đội xe" | Thực tế doanh nghiệp vận tải mới là người mua giải pháp và cần dashboard để theo dõi hành vi tài xế, tài xế chỉ là người sử dụng/tiếp nhận|
+|Bottleneck |Tài xế tự đánh giá mức độ buồn ngủ|Nhấn mạnh vào khoảnh khắc ngủ gật chớp nhoáng và sự mất nhận thức tạm thời | Làm nổi bật lý do vì sao AI bắt buộc phải phân tích "chuỗi thời gian" thay vì chỉ nhìn 1 ảnh tĩnh tĩnh|
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 |Nhận diện đúng |Nhận diện và phát cảnh báo đúng các chuỗi sự kiện buồn ngủ thực sự khớp với dữ liệu đã gán nhãn | Bỏ sót các sự kiện tài xế ngủ gật chớp nhoáng do hệ thống phân tích chuỗi thời gian kém|
-| 2 | Không cảnh báo sai| Phân biệt được và bỏ qua các dấu hiệu đơn lẻ bình thường|Hệ thống liên tục hú còi báo động giả (nhận nhầm hành vi bình thường thành buồn ngủ), gây ức chế cho tài xế |
-| 3 |Độ trễ thấp |Hệ thống tổng hợp đủ bằng chứng từ chuỗi tín hiệu và phát cảnh báo ngay trước khi tài xế mất kiểm soát | Cảnh báo phát ra quá muộn, khi xe đã chệch làn hoặc tài xế đã tự giật mình tỉnh lại|
+| 1 |Bắt đúng sự kiện |AI kích hoạt cảnh báo đúng vào các chuỗi sự kiện tài xế ngủ gật, gật gù liên tục khớp với dữ liệu đã gán nhãn thực tế | Bỏ sót các ca tài xế ngủ mở mắt (mắt lờ đờ, không tập trung) hoặc ngủ gật nhưng đầu vẫn giữ thẳng|
+| 2 | Ít cảnh báo giả| AI phân biệt được và bỏ qua các hành vi bình thường: Nháy mắt sinh lý, ngáp do thiếu oxy nhẹ, liếc nhìn gương chiếu hậu. Tần suất báo sai ≤ 1 lần/giờ|Còi hú liên tục khi tài xế nheo mắt vì chói nắng mặt trời, hoặc khi tài xế đeo kính/chỉnh kính |
+| 3 |Độ trễ thấp |Tính từ khoảnh khắc chuỗi đặc trưng vượt ngưỡng nguy hiểm, còi báo động phải kêu trong vòng ≤ 2 giây | Hệ thống giật lag, xử lý chậm, tài xế nhắm mắt 4-5 giây (xe đã lạng làn) thì AI mới bắt đầu báo động|
 | 4 | Tính ổn định|Duy trì được khả năng nhận diện điểm neo khuôn mặt trong điều kiện thực tế khắc nghiệt: cabin tối (ban đêm), ánh sáng ngược chói, hoặc tài xế đeo kính/khẩu trang | Trạng thái mắt/miệng bị nhận diện sai lệch hoàn toàn khi góc camera rung lắc hoặc khi thay đổi điều kiện ánh sáng đột ngột|
 
 ---
@@ -312,31 +315,44 @@ Người kiểm tra: Tài xế trực tiếp đánh giá tính chính xác của
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? |Thấp |Buồn ngủ là nguyên nhân top đầu gây tai nạn xe tải. Quản lý đội xe sẵn sàng đầu tư để giảm rủi ro đền bù và bảo vệ tài sản |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? |Trung bình |Đầu ra rất dễ hiểu (còi hú, đèn chớp). Tuy nhiên, nếu báo sai nhiều, tài xế sẽ ức chế. Cần thiết kế cơ chế (nút bấm vật lý) để tài xế báo cáo "AI nhận diện sai" giúp model học lại |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? |Trung bình |Việc huấn luyện AI nhận diện mặt không khó. Cái khó là tối ưu mô hình để chạy mượt mà chuỗi thời gian trên máy tính nhúng yếu (Edge AI) đặt trong xe mà không bị quá nhiệt hay giật lag |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? |Trung bình |Cần chi phí lắp đặt phần cứng (Camera hồng ngoại IR + Bộ vi xử lý) cho từng xe. Về pháp lý, cần thông báo rõ với tài xế về việc ghi hình để đảm bảo quyền riêng tư |
 
 ### 8.2. Kết luận
 
 **Quyết định:** Go / Not Yet / No-Go
 
-**Lý do:**
+**Lý do:** Vấn đề có giá trị cực kỳ lớn (cứu mạng người, tiết kiệm tài sản). Bài toán nằm trong khả năng giải quyết của Computer Vision hiện tại. Rủi ro về ranh giới an toàn đã được kiểm soát chặt chẽ bằng thiết kế Workflow
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** 
+Lắp đặt thiết bị trên 2-5 chiếc xe tải chạy tuyến đường dài (ca đêm) trong 2 tuần
+Giai đoạn 1 (Shadow Mode - 1 tuần): AI chạy ngầm, ghi nhận log và video nhưng không phát ra tiếng còi để đánh giá âm thầm mức độ Recall và False Positive (tránh làm phiền tài xế khi model chưa hoàn thiện)
+
+Giai đoạn 2 (Active Mode - 1 tuần): Bật cảnh báo âm thanh, thu thập feedback trực tiếp từ tài xế xem còi báo có đúng lúc và có gây ức chế không
 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
 
 **Nếu No-Go — nên làm gì thay AI:**
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng**: Nếu sau 2 tuần Pilot mà tỉ lệ cảnh báo sai > 3 lần/giờ hoặc hệ thống liên tục bị sập do phần cứng quá nhiệt, thì quay về giai đoạn thu thập thêm dữ liệu gán nhãn (đặc biệt là dữ liệu ban đêm) và tối ưu lại trọng lượng mô hình trước khi đem ra test tiếp
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
+### 9.1. Hạn chế về dữ liệu và xác định "Ground Truth"
+- Mất cân bằng dữ liệu: Trong thực tế, 99% thời gian lái xe là trạng thái bình thường, hành vi ngủ gật chỉ chiếm chưa tới 1%. Việc thu thập đủ dữ liệu đa dạng về các pha buồn ngủ thực tế trên xe tải là cực kỳ khó và tốn kém
 
--
+- Tính chủ quan của nhãn: Camera chỉ ghi nhận được biểu hiện vật lý (nhắm mắt, ngáp). Ground truth tuyệt đối của giấc ngủ phải được đo bằng sóng não (EEG). Do đó, AI vẫn có sai số sinh học (ví dụ: tài xế lờ đờ nhưng mắt vẫn mở to, hoặc tài xế chớp mắt chậm do khô mắt chứ không phải buồn ngủ)
+### 9.2. Hạn chế về môi trường và phần cứng
+- Điểm mù ngoại cảnh: Hệ thống camera RGB thông thường sẽ bị suy giảm độ chính xác nghiêm trọng nếu tài xế đeo kính râm tối màu che khuất hoàn toàn đặc trưng mắt, hoặc khi cabin bị ngược sáng
 
+- Xung đột giữa Độ trễ và Độ chính xác: Các mô hình phân tích chuỗi thời gian (như 3D-CNN hay Vision Transformer) cho độ chính xác rất cao nhưng lại quá nặng. Khi ép các mô hình này chạy trên thiết bị nhúng có tản nhiệt kém trong cabin xe, hệ thống dễ bị quá nhiệt, dẫn đến giật lag và làm tăng độ trễ cảnh báo
+### 9.3. Hướng phát triển tiếp theo
+- Cơ chế Feedback vật lý: Lắp đặt một nút bấm "Báo cáo sai" trên taplo. Mỗi khi hệ thống báo động nhầm, tài xế chỉ cần đập tay vào nút. Hệ thống sẽ tự động cắt 10 giây video trước đó, dán nhãn "False Positive" và gửi về server để model học lại
+- Tích hợp dữ liệu Telematics (Mạng CAN bus): Không chỉ nhìn vào khuôn mặt, hệ thống sẽ kết hợp thêm dữ liệu từ chính chiếc xe (Góc đánh lái, vận tốc, phanh). Nếu mắt tài xế chớp chậm và xe bắt đầu có dấu hiệu lạng làn/đánh lái gắt, độ tin cậy của cảnh báo sẽ đạt mức gần như tuyệt đối
+- Mỗi con người có một nhịp sinh học và tần suất chớp mắt bình thường khác nhau. Hướng đi tiên tiến nhất là AI tự học: Trong 15 phút đầu tiên của chuyến đi , hệ thống sẽ ngầm ghi nhận "Baseline" (ngưỡng bình thường) của riêng tài xế đó. Các cảnh báo sau này sẽ được đối chiếu với "Baseline" cá nhân hóa này thay vì dùng một quy tắc cứng nhắc cho tất cả mọi người
 ## 10. Tài liệu tham khảo
 
 -
