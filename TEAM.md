@@ -12,8 +12,13 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
+<<<<<<< HEAD
 | 1 | Nguyễn Bảo Duy|2A202603890 | Nhóm trưởng|baoduy2048 |
 | 2 | | | | |
+=======
+| 1 | | | | |
+| 2 | Nguyễn Bá Quang Huy | 2A202603926 | Thành viên | quanghuynguyenba |
+>>>>>>> 1bbac370d2ca03a5b75651a14de115a7def3bf1d
 | 3 | | | | |
 | 4 | | | | |
  
