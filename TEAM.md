@@ -12,7 +12,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Lê Hải Lân | 2A202603915 | Thành viên | github.com/laaaaanleeeee |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
