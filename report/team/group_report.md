@@ -227,7 +227,7 @@ Vì sao:
 | **Quy trình** | |
 | **Bottleneck** | |
 | **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
+| **Success Metric** (baseline → target, cách đo) |Đạt Recall mục tiêu đối với các sự kiện buồn ngủ đã được gán nhãn |
 | **Boundary** | |
 | **AI intervention point** | |
 | **Mức chọn** | No AI / Rule / Workflow / Agent |
