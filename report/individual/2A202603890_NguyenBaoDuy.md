@@ -48,7 +48,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Trước kỳ thi, sinh viên mất hàng giờ tua đi tua lại các video bài giảng dài để tìm lại đúng đoạn giảng viên giảng trọng tâm hoặc chữa bài tập, do không có công cụ định vị mốc thời gian và nội dung slide |
+| Job Story | Khi ôn tập lại kiến thức từ video bài giảng trước kỳ thi, tôi muốn tìm ra chính xác phân đoạn giảng viên hướng dẫn bài tập hoặc giảng lý thuyết, để không phải mất hàng giờ tua đi tua lại tìm kiếm thủ công |
 | Actor | Sinh viên đại học |
 | Thời điểm / bối cảnh | Vào giai đoạn ôn thi cuối kỳ |
 | Quy trình hiện tại (3–7 bước) | 
@@ -63,7 +63,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 5. Lặp lại chu trình thao tác này đối với hệ thống video bài giảng của các môn học khác|
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2 & 3 tua video thủ công ngốn từ 30 đến 45 phút để tra cứu thông tin|
 | Impact (nếu không giải thì sao) | Mất 30 đến 45 phút cho việc tìm kiếm thông tin của một 1 môn học. Một kỳ thi nhiều môn học sẽ tốn nhiều giờ đồng hồ cho việc tìm kiếm |
-| Success metric (baseline → target) | Rút ngắn thời gian tìm đúng đoạn video cần học từ 30 phút tua thủ công xuống dưới 30 giây thông qua cơ chế hỏi-đáp nhận kết quả kèm mốc thời gian chính xác|
+| Success metric (baseline → target) | Rút ngắn thời gian tìm đúng đoạn video cần học từ 30 phút tua thủ công xuống dưới 30 giây|
 | Phương án không dùng AI | sử dụng tính năng tìm kiếm phụ đề trên youtube, nhưng phần lớn nội dung bài học được lưu trữ trên hệ thống lms, hoặc google drive nên không thể tra cứu |
 | Giả thuyết về AI (nếu có) |AI tự động chuyển đổi âm thanh thành văn bản kết hợp trích xuất khung hình slide, cho phép sinh viên chat truy vấn trực tiếp để hệ thống trả về đường link video gắn sẵn mốc thời gian chính xác đến từng giây |
 | Cảm nhận nhanh | Workflow|
@@ -151,8 +151,8 @@ HIỆN TẠI — 45 phút
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
+- Card số: 1
+- Vì sao: vì đây là vấn đề tôi đã từng gặp phải, và mong muốn đưa ra một giải pháp để giúp sinh viên ôn tập tốt hơn
 - Câu hỏi muốn nhóm phản biện:
 
 ### AI đã phản biện card thế nào

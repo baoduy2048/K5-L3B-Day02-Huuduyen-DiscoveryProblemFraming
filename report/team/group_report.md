@@ -224,14 +224,18 @@ Vì sao:
 | Trường | Nội dung |
 |---|---|
 | **Actor** | Tài xế xe tải, xe khách hoặc tài xế đường dài. Người quản lý đội xe là bên có thể triển khai và theo dõi hiệu quả hệ thống|
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) |Đạt Recall mục tiêu đối với các sự kiện buồn ngủ đã được gán nhãn |
-| **Boundary** | |
-| **AI intervention point** | |
+| **Quy trình** |1. Bắt đầu chuyến đi - Tự đánh giá mức độ tỉnh táo - 3. Quan sát dấu hiệu buồn ngủ/mỏi mắt - 4. Tự quyết định lái tiếp hay nghỉ - 5. Camera ghi nhận khuôn mặt - 6. Hệ thống phát cảnh báo khi vượt ngưỡng - 7. Tài xế quyết định giảm tốc/nghỉ ngơi |
+| **Bottleneck** |Bước 5–6: Việc nhận biết và phân biệt dấu hiệu buồn ngủ rất khó (nhắm mắt, ngáp riêng lẻ chưa chắc là buồn ngủ). Dựa vào một tín hiệu hoặc một khung hình tĩnh dễ dẫn đến cảnh báo sai hoặc bỏ sót |
+| **Impact** |Cảnh báo sai thường xuyên làm tài xế mất niềm tin và bỏ qua cảnh báo thật; trong khi đó, cảnh báo muộn khiến tài xế không còn đủ thời gian phản ứng an toàn |
+| **Success Metric** (baseline → target, cách đo) |1. Đạt Recall mục tiêu với các sự kiện buồn ngủ đã gán nhãn
+2. Giảm số cảnh báo sai (false positive) trên mỗi giờ lái xe
+3. Giảm độ trễ từ khi có dấu hiệu đến khi phát cảnh báo
+4. Duy trì độ chính xác trong nhiều điều kiện ánh sáng và góc camera |
+| **Boundary** | AI chỉ phân tích chuỗi tín hiệu để đánh giá rủi ro và phát cảnh báo. AI không trực tiếp can thiệp vào việc điều khiển xe (phanh, đánh lái), tài xế vẫn là người đưa ra quyết định cuối cùng|
+| **AI intervention point** |Can thiệp ở bước 5-6: AI thực hiện phân tích chuỗi thời gian (temporal analysis) dựa trên trạng thái mắt, miệng, chuyển động đầu để đưa ra cảnh báo đáng tin cậy thay vì phản ứng với một dấu hiệu đơn lẻ |
 | **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Rủi ro & người kiểm tra** |Rủi ro: Cảnh báo sai làm phiền tài xế hoặc bỏ sót dấu hiệu nguy hiểm
+Người kiểm tra: Tài xế trực tiếp đánh giá tính chính xác của cảnh báo trên xe và người quản lý đội xe theo dõi log dữ liệu để đánh giá hiệu quả tổng thể của hệ thống |
 
 **Thay đổi so với v0 và lý do:**
 
