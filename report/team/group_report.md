@@ -160,9 +160,10 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|MediaPipe Face Mesh | https://vision.fe.uni-lj.si/cvww2016/proceedings/papers/05.pdf|Trích xuất tọa độ khuôn mặt & phân loại bằng công thức toán học | Siêu nhẹ, API cực tốt cho cả Python và C++. Chạy real-time mượt mà ngay cả trên CPU laptop thông thường|Không hoạt động tốt nếu thiếu sáng ban đêm, tài xế đeo kính râm đen, hoặc góc quay quá nghiêng. Không hiểu bối cảnh thời gian |Có thể tạo ra một prototype chạy được ngay trong 1-2 tuần đầu để test luồng (pipeline) của hệ thống |
+|YOLOv8 / YOLOv11 |https://docs.ultralytics.com/integrations/tensorrt |Nhận diện đối tượng trên frame ảnh tĩnh & triển khai thực tế |Cân bằng giữa tốc độ và độ chính xác. Rất dễ chuyển đổi mô hình để chạy nhúng |Phải tự code thêm module quản lý trạng thái để xác định "buồn ngủ" thay vì chỉ 1 frame "nhắm mắt" |Có thể đưa mô hình lên các thiết bị IoT trên xe ô tô thực tế |
+| Vision Transformer| https://github.com/lucidrains/vit-pytorch| Phân tích End-to-end: Đưa cả 1 đoạn video (chuỗi frame) vào, mô hình tự trả ra kết quả trạng thái tài xế| Hiểu được toàn bộ chuỗi hành vi lờ đờ, gật gù theo thời gian nhờ cơ chế Attention| Mô hình rất nặng, ngốn nhiều VRAM máy tính. Đòi hỏi GPU mạnh để huấn luyện. Khó tối ưu độ trễ khi chạy trên phần cứng yếu|Có thể ứng dụng nếu có server/GPU đủ mạnh |
+|Phân tích Telematics | https://iieta.org/sites/default/files/pdf/2025-04/ts_42.02_38.pdf| Phân tích dữ liệu chuỗi thời gian 1D từ cảm biến của xe|Hoàn toàn miễn nhiễm với các vấn đề của Camera (chạy tốt ban đêm, không sợ tài xế đeo kính râm, che mặt, ngược sáng) |Thu thập dữ liệu thực tế cực kỳ khó. Hệ thống chỉ báo động khi xe đã có dấu hiệu lạng lách |Hướng đi nếu nhóm muốn áp dụng kiến thức Streaming |
 
 ---
 
