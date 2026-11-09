@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | | | | |
-| 2 | | | | |
+| 2 | Nguyễn Bá Quang Huy | 2A202603926 | Thành viên | quanghuynguyenba |
 | 3 | | | | |
 | 4 | | | | |
 
