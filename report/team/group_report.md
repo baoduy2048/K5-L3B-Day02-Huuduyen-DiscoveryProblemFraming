@@ -93,18 +93,66 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi | L.V.K, 36 tuổi, tài xế container đường dài, có 5 năm kinh nghiệm. |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Khó khăn lớn nhất và hiểm nguy nhất của cánh tài xế là buồn ngủ." |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Chuyến chở chuối từ Trảng Bom, Đồng Nai đến cửa khẩu Hữu Nghị, Lạng Sơn, khởi hành lúc 21h. Bài viết mô tả hành trình và tình trạng buồn ngủ vào khoảng 2h sáng. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Uống trà đặc, cà phê, nước tăng lực; bật nhạc sôi động; rửa mặt bằng nước; cố chạy đến điểm nghỉ rồi ngủ khoảng 3 tiếng. |
+| Mất bao lâu, bao lần? | Hành trình khoảng 2.000 km, yêu cầu chạy 45–50 tiếng. Khoảng 2h sáng xuất hiện cơn buồn ngủ mạnh. Tổng thời gian ngủ trên hành trình được anh chia sẻ khoảng 6 tiếng. |
+| Insight / opportunity rút ra | Tài xế đường dài phải cân bằng giữa thời gian giao hàng và nhu cầu nghỉ ngơi. Những biện pháp chống buồn ngủ thông thường có thể không còn hiệu quả khi mệt mỏi kéo dài. |
+
+**Interview 02 – T.V.C (Việt Nam)**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | T.V.C, 34 tuổi, quê Lâm Đồng, tài xế xe tải đường dài. |
+| Câu nói đáng nhớ nhất (nguyên văn) | Anh phải dùng nước đá dội lên đầu để chống lại cơn buồn ngủ khi lái xe. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong các chuyến xe chở hàng hơn 1.000 km từ TP.HCM ra Nam Định, tình trạng mệt mỏi và buồn ngủ xuất hiện trong hành trình. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Rửa mặt bằng nước đá, dội nước đá lên đầu, uống trà Bắc đặc; nếu không tỉnh táo thì dừng ở trạm xăng để chợp mắt. |
+| Mất bao lâu, bao lần? | Không có số lần cụ thể. Có nhiều lần phải áp dụng các biện pháp chống buồn ngủ; thời gian chợp mắt không được định lượng. |
+| Insight / opportunity rút ra | Tài xế đã phải sử dụng nhiều biện pháp thủ công để duy trì tỉnh táo. Ngoài nguy cơ tai nạn, việc tìm nơi nghỉ an toàn cũng là một rào cản. |
+
+**Interview 03 – Anh T (Việt Nam)**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Anh T, quận 7, TP.HCM, có hơn 20 năm kinh nghiệm lái xe khách đường dài. |
+| Câu nói đáng nhớ nhất (nguyên văn) | Anh từng giật mình tỉnh dậy khi đang lái xe và nhận ra mình suýt đâm vào phương tiện phía trước. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | 	Một lần lái xe ban đêm, đặc biệt trong khung giờ 4–5h sáng là thời điểm anh nhận thấy rất dễ buồn ngủ. Ngày cụ thể không được nêu. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Uống cà phê hoặc nước tăng lực trước khi lái; trò chuyện với người đi cùng; dừng xe ngủ một lát khi không thể cưỡng lại cơn buồn ngủ. |
+| Mất bao lâu, bao lần? | Không có số lần hoặc thời lượng cụ thể. Anh xác nhận bản thân từng trải qua tình trạng này. |
+| Insight / opportunity rút ra | Người lái có thể không kiểm soát được thời điểm xuất hiện cơn buồn ngủ. Việc tự đánh giá mức độ tỉnh táo đôi khi không đủ để ngăn chặn nguy cơ. |
+
+**Interview 04 – Đ.V.H**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Đ.V.H, 47 tuổi, Đông Anh, Hà Nội, tài xế xe tải đường dài với hơn 20 năm kinh nghiệm. |
+| Câu nói đáng nhớ nhất (nguyên văn) | Anh từng thiếp đi khoảng 1–2 giây khi đang lái xe. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Một chuyến chở hàng đi Tây Bắc. Do quá mệt, anh thiếp đi, đến khi nghe tiếng va chạm mới tỉnh lại và nhận ra bánh xe đã chạm ta-luy đường. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Bài viết không ghi rõ đầy đủ các biện pháp thường xuyên anh sử dụng. |
+| Mất bao lâu, bao lần? | Anh cho biết từng vài lần rơi vào trạng thái thiếp đi 1–2 giây. |
+| Insight / opportunity rút ra | Microsleep có thể xảy ra rất nhanh và tài xế chỉ nhận ra sau khi đã xuất hiện tình huống nguy hiểm. Kinh nghiệm lái xe lâu năm không đồng nghĩa với việc miễn nhiễm với buồn ngủ. |
+
+**Interview 05 – T.N.V**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | T.N.V, tài xế lâu năm, từng lái xe IFa W50 nhận khoán của công ty. |
+| Câu nói đáng nhớ nhất (nguyên văn) | Anh cho biết không thể nhớ hết mình đã bao nhiêu lần ngủ gục và bao nhiêu lần thoát chết trong gang tấc. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Bài viết hồi tưởng giai đoạn hơn 15 năm lái xe cả ngày lẫn đêm. Không nêu ngày xảy ra sự kiện gần nhất. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Không có biện pháp cụ thể được mô tả trong bài viết. |
+| Mất bao lâu, bao lần? | Nhiều lần ngủ gục trong hơn 15 năm làm nghề, không có con số chính xác. |
+| Insight / opportunity rút ra | Với một số tài xế, ngủ gật không phải sự kiện cá biệt mà có thể lặp lại nhiều lần trong suốt quá trình làm nghề. Điều kiện lao động và áp lực kinh tế là yếu tố đáng tìm hiểu. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| https://vnexpress.net/buon-ngu-ke-thu-cua-tai-xe-duong-dai-4577180.html | 1 | Buồn ngủ xuất hiện trong chuyến đi dài; phải dùng trà đặc, cà phê, nước tăng lực và rửa mặt để tỉnh táo. Có thời điểm buồn ngủ mạnh vào khoảng 2h sáng. | Tài xế đã có kinh nghiệm và chủ động bố trí thời gian nghỉ. Chưa có bằng chứng rằng hệ thống AI là giải pháp bắt buộc. |
+| https://vietnamnet.vn/tai-xe-xe-duong-dai-ngay-doi-nuoc-da-len-dau-dem-khong-dam-ngu-sau-2230539.html | 1 | Phải dùng nước đá, trà đặc và dừng tại trạm xăng để chợp mắt khi buồn ngủ. Cho thấy các biện pháp tự xử lý hiện tại còn hạn chế. | Chưa có dữ liệu định lượng về tần suất buồn ngủ hoặc hiệu quả của từng biện pháp. |
+| https://vietnamnet.vn/giac-ngu-trang-ap-den-khi-lai-xe-mot-giay-chop-mat-hiem-hoa-khon-luong-2467307.html | 1 | Từng nhiều lần thiếp đi 1–2 giây khi lái xe. Có trường hợp chỉ tỉnh lại khi nghe tiếng va chạm. Cho thấy nguy cơ microsleep thực tế. | Chưa có bằng chứng cho thấy camera AI có thể phát hiện sớm hơn cảm nhận của tài xế trong trường hợp này. |
+| https://tuoitre.vn/tam-su-cua-tai-xe-tung-khong-nho-bao-nhieu-lan-ngu-guc-khi-lai-xe-choang-tinh-xe-nam-o-bai-co-20250114102229487.htm | 1 | Từng giật mình tỉnh dậy khi đang lái xe. Khung giờ 4–5h sáng dễ buồn ngủ. Đã sử dụng cà phê, nước tăng lực và dừng nghỉ để đối phó. | Tài xế đã nhận biết được một số khung giờ nguy hiểm và có biện pháp chủ động phòng tránh. |
+| https://vnexpress.net/con-buon-ngu-sau-tay-lai-3873060.html | 1 | Buồn ngủ trong chuyến xe đêm sau khi làm việc liên tục. Áp lực giao hàng có thể khiến tài xế tiếp tục lái dù mệt mỏi. Đã xảy ra tai nạn nghiêm trọng. | Trường hợp này chưa chứng minh cảnh báo AI sẽ thay đổi hành vi nếu tài xế vẫn chịu áp lực phải hoàn thành chuyến hàng. |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
@@ -112,10 +160,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| MediaPipe Face Mesh| https://vision.fe.uni-lj.si/cvww2016/proceedings/papers/05.pdf| Trích xuất tọa độ khuôn mặt và phân loại|Siêu nhẹ, API cực tốt cho cả Python và C++. Chạy real-time mượt mà ngay cả trên CPU laptop thông thường| Không hoạt động tốt nếu thiếu sáng ban đêm, tài xế đeo kính râm đen, hoặc góc quay quá nghiêng| Là công cụ để code ra một prototype chạy được ngay trong 1-2 tuần đầu để test luồng của hệ thống|
-|YOLOv8 / YOLOv11 |https://docs.ultralytics.com/integrations/tensorrt | Nhận diện đối tượng trên frame ảnh tĩnh|Cân bằng tuyệt vời giữa Tốc độ và Độ chính xác. Rất dễ chuyển đổi mô hình để chạy nhúng | Phải tự code thêm module quản lý trạng thái để xác định "buồn ngủ" thay vì chỉ 1 frame "nhắm mắt"|Có thể đưa mô hình lên các thiết bị IoT trên xe ô tô thực tế |
-|Vision Transformer |https://github.com/lucidrains/vit-pytorch |Phân tích End-to-end: Đưa cả 1 đoạn video vào, mô hình tự trả ra kết quả trạng thái tài xế |Hiểu được toàn bộ chuỗi hành vi lờ đờ, gật gù theo thời gian nhờ cơ chế Attention | Mô hình rất nặng, ngốn nhiều VRAM máy tính. Đòi hỏi GPU mạnh để huấn luyện. Khó tối ưu độ trễ|Có thể sử dụng nếu có server/GPU đủ mạnh để train |
-|Phân tích Telematics | https://iieta.org/sites/default/files/pdf/2025-04/ts_42.02_38.pdf| Phân tích dữ liệu chuỗi thời gian 1D từ cảm biến của xe| Hoàn toàn miễn nhiễm với các vấn đề của Camera| Thu thập dữ liệu thực tế cực kỳ khó. Hệ thống chỉ báo động khi xe đã có dấu hiệu lạng lách| Có thể sử dụng nếu muốn áp dụng kiến trúc streaming|
+| | | | | | |
+| | | | | | |
+| | | | | | |
 
 ---
 
@@ -219,56 +266,78 @@ Giá trị của quy trình tương lai không nằm ở việc giảm số bư�
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Tài xế điều khiển phương tiện, đặc biệt là tài xế phải lái xe liên tục trong thời gian dài. |
+| **Quy trình** | Tài xế bắt đầu chuyến đi, tự theo dõi tình trạng tỉnh táo trong quá trình lái xe và chủ động quyết định nghỉ ngơi khi cảm thấy buồn ngủ hoặc mệt mỏi. |
+| **Bottleneck** | Tài xế phải tự nhận biết và đánh giá mức độ buồn ngủ. Các dấu hiệu như chớp mắt chậm, nhắm mắt kéo dài, ngáp hoặc cúi đầu có thể xuất hiện nhưng không phải lúc nào tài xế cũng nhận ra hoặc đánh giá đúng mức độ nguy hiểm. |
+| **Impact** | Phát hiện muộn hoặc bỏ qua dấu hiệu buồn ngủ có thể làm giảm khả năng tập trung, chậm phản ứng và tăng nguy cơ xảy ra tai nạn giao thông, gây thiệt hại về người và tài sản. |
+| **Success Metric** (baseline → target, cách đo) | Baseline: Chưa có hệ thống giám sát tự động, khả năng phát hiện phụ thuộc vào tự đánh giá của tài xế và chưa có số liệu đo lường cụ thể. Target: Hệ thống phát hiện được các dấu hiệu buồn ngủ với Recall mục tiêu ≥ 90%, duy trì tỷ lệ cảnh báo sai ở mức thấp (ví dụ ≤ 1 false alarm/hour) và độ trễ cảnh báo mục tiêu ≤ 2 giây. Đo lường thông qua dữ liệu video được gán nhãn, so sánh kết quả dự đoán với nhãn thực tế, đồng thời thống kê số cảnh báo sai và độ trễ trong các tình huống kiểm thử. Đây là các mục tiêu đề xuất cần kiểm chứng thực nghiệm. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI chỉ nhận diện dấu hiệu và đánh giá nguy cơ buồn ngủ, không khẳng định chắc chắn trạng thái sinh lý của tài xế. Không đưa ra kết luận chỉ dựa trên một hành vi đơn lẻ. Không tự điều khiển phương tiện hoặc quyết định dừng xe. Tài xế phải tự đánh giá tình trạng thực tế và quyết định dừng xe tại nơi an toàn để nghỉ ngơi. Khi dữ liệu không đủ chất lượng, camera mất tín hiệu hoặc AI gặp lỗi, hệ thống phải thông báo không khả dụng thay vì kết luận tài xế tỉnh táo. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
-
+1. Không nên coi hành vi ngáp hoặc nhắm mắt ngắn là bằng chứng chắc chắn của buồn ngủ: Hệ thống cần phân tích nhiều đặc trưng và chuỗi hành vi theo thời gian để hạn chế cảnh báo sai.
+2. Không nên để AI tự quyết định điều khiển phương tiện hoặc dừng xe vì đây là quyết định có ảnh hưởng trực tiếp đến an toàn giao thông: AI chỉ đưa ra cảnh báo và đánh giá nguy cơ, tài xế chịu trách nhiệm xử lý.
 ---
 
 ## 6. Mức can thiệp AI (CP6)
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: Độ mơ hồ cao × Độ phức tạp cao.
 
-Vì sao:
+Vì sao: 
+Độ mơ hồ cao: Biểu hiện buồn ngủ không hoàn toàn giống nhau giữa các tài xế. Một số hành vi như ngáp, chớp mắt hoặc cúi đầu có thể xuất hiện trong trạng thái bình thường, không nhất thiết đồng nghĩa với buồn ngủ.
+Độ phức tạp cao: Hệ thống cần xử lý dữ liệu hình ảnh liên tục, nhận diện khuôn mặt, trích xuất đặc trưng mắt, miệng và chuyển động đầu, sau đó phân tích mối quan hệ giữa các tín hiệu theo thời gian.
+Ngoài ra, hệ thống phải hoạt động trong nhiều điều kiện môi trường khác nhau như ánh sáng yếu, tài xế đeo kính, khuôn mặt bị che khuất hoặc thay đổi góc nhìn camera.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Quy định thời gian nghỉ giữa các chuyến, khuyến khích tài xế tự kiểm tra tình trạng tỉnh táo và nghỉ ngơi định kỳ. | Khi chỉ cần cải thiện ý thức và kỷ luật nghỉ ngơi của tài xế. | Phụ thuộc hoàn toàn vào ý thức và khả năng tự đánh giá; khó phát hiện dấu hiệu buồn ngủ bất thường. | Không |
+| **Rule** | Sử dụng ngưỡng cố định để phát hiện các hành vi như nhắm mắt quá lâu, ngáp liên tục hoặc cúi đầu. | Khi môi trường hoạt động ổn định và các dấu hiệu cần phát hiện có thể mô tả bằng quy tắc rõ ràng. | Khó phân biệt hành vi bình thường và buồn ngủ; dễ báo nhầm hoặc bỏ sót. | Không |
+| **Workflow** | Camera thu thập hình ảnh → AI nhận diện đặc trưng → phân tích theo thời gian → đánh giá nguy cơ → Rule kiểm tra ngưỡng → phát cảnh báo cho tài xế. | Khi cần kết hợp AI xử lý dữ liệu phức tạp với các quy tắc kiểm soát và quy trình xử lý rõ ràng. | Phụ thuộc vào chất lượng dữ liệu, mô hình AI và điều kiện môi trường; có thể xuất hiện cảnh báo sai hoặc bỏ sót. | Có |
+| **Agent** | 	AI tự lập kế hoạch, chủ động thực hiện nhiều hành động hoặc phối hợp với các hệ thống khác để xử lý tình huống buồn ngủ. | Khi cần hệ thống tự chủ xử lý nhiều tác vụ và có quyền thực hiện hành động trong phạm vi được kiểm soát. | Tăng độ phức tạp, khó kiểm soát hành vi và không cần thiết đối với bài toán cảnh báo buồn ngủ. | Không |
 
-**Mức chọn:**
+**Mức chọn:** WORKFLOW
 
 **Vì sao không chọn mức đơn giản hơn:**
+Không chọn No AI: Vì việc tự giám sát của tài xế không đảm bảo phát hiện sớm các dấu hiệu buồn ngủ, đặc biệt khi tài xế không nhận thức được mức độ mệt mỏi của bản thân.
+Không chọn Rule: Vì các dấu hiệu buồn ngủ có tính biến thiên, khó mô tả đầy đủ bằng những ngưỡng cố định. Cần AI để nhận diện đặc trưng hình ảnh và phân tích chuỗi hành vi theo thời gian.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Phân tích hình ảnh khuôn mặt và chuỗi hành vi theo thời gian để nhận diện các dấu hiệu liên quan đến buồn ngủ, từ đó phân loại trạng thái hoặc tạo điểm nguy cơ buồn ngủ. |
+| **Judgment** — con người cân nhắc, quyết định gì? | Tài xế đánh giá tình trạng tỉnh táo thực tế của bản thân, cân nhắc mức độ nguy hiểm và quyết định có cần giảm tốc độ, dừng xe và nghỉ ngơi hay không. |
+| **Action** — hành động cuối cùng là gì, ai làm? | Hệ thống AI phát cảnh báo bằng âm thanh hoặc hình ảnh khi đạt ngưỡng nguy cơ. Tài xế tiếp nhận cảnh báo và chủ động dừng phương tiện tại vị trí an toàn để nghỉ ngơi. |
+| **Outcome** — đo kết quả bằng gì? | Recall, Precision, F1-score, số cảnh báo sai trên mỗi giờ (False Alarms/Hour), độ trễ cảnh báo và tỷ lệ phát hiện đúng trong các điều kiện môi trường khác nhau. |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Video hoặc frame hình ảnh khuôn mặt tài xế từ camera, bao gồm đặc trưng mắt, miệng và chuyển động đầu. Dữ liệu được thu thập trực tiếp từ camera trong quá trình lái xe. Cần xây dựng tập dữ liệu có gán nhãn để huấn luyện và đánh giá mô hình. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Dữ liệu video đã được gán nhãn, kết quả kiểm thử thực tế, thống kê cảnh báo sai và phản hồi của tài xế. Các trường hợp nhận diện sai hoặc bỏ sót được sử dụng để bổ sung dữ liệu, điều chỉnh mô hình và ngưỡng cảnh báo. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
 - Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+Người dùng muốn được hỗ trợ.
+Bằng chứng:
+-Tài xế vẫn trực tiếp điều khiển phương tiện và chịu trách nhiệm về an toàn chuyến đi.
+-AI chỉ hỗ trợ phát hiện dấu hiệu buồn ngủ mà tài xế có thể không tự nhận ra.
+-Khi nhận cảnh báo, tài xế tự đánh giá tình trạng thực tế và quyết định dừng xe nghỉ ngơi.
+-AI không có quyền tự động điều khiển phương tiện hoặc đưa ra quyết định thay con người.
 
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+Ai bỏ sót sẽ tệ hơn
+Lý do:
+-Nếu AI báo nhầm, tài xế có thể bị làm phiền hoặc phải kiểm tra lại tình trạng của mình, gây gián đoạn chuyến đi.
+-Nếu AI bỏ sót dấu hiệu buồn ngủ, tài xế có thể tiếp tục lái xe trong trạng thái thiếu tỉnh táo mà không nhận được cảnh báo, làm tăng nguy cơ tai nạn.
+
+Cách thiết kế để hạn chế rủi ro:
+-Ưu tiên Recall trong quá trình lựa chọn và đánh giá mô hình nhằm hạn chế bỏ sót các trường hợp buồn ngủ.
+-Không dựa vào một hành vi đơn lẻ mà kết hợp nhiều đặc trưng mắt, miệng và chuyển động đầu theo thời gian.
+-Sử dụng ngưỡng cảnh báo phù hợp để cân bằng giữa khả năng phát hiện và tỷ lệ cảnh báo sai.
+-Khi dữ liệu đầu vào không đủ chất lượng, thông báo hệ thống không khả dụng thay vì kết luận tài xế tỉnh táo.
+-Giữ tài xế trong vòng kiểm soát (Human-in-the-loop), không để AI tự quyết định hành động điều khiển phương tiện.
 ---
 
 ## 7. Problem Statement v1 + tiêu chí đánh giá (CP6)
