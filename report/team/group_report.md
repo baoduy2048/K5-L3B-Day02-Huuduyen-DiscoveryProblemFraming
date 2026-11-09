@@ -223,7 +223,7 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
+| **Actor** | Tài xế xe tải, xe khách hoặc tài xế đường dài. Người quản lý đội xe là bên có thể triển khai và theo dõi hiệu quả hệ thống|
 | **Quy trình** | |
 | **Bottleneck** | |
 | **Impact** | |
