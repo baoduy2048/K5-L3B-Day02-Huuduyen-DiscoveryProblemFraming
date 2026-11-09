@@ -12,11 +12,11 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Nguyễn Bảo Duy|2A202603890 | Nhóm trưởng|baoduy2048 |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
-
+ 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
 Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối thời gian, ghi chép, người phản biện chính, phụ trách kiểm chứng (phỏng vấn/survey), phụ trách research, vẽ quy trình, viết Problem Statement.
