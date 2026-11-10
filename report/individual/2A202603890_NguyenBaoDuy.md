@@ -35,12 +35,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 |Tra cứu mốc thời gian trong Video bài giảng |một điều mà tool lớn (NotebookLM, YouTube) chưa làm tốt: video học nội bộ (LMS/Drive) không có phụ đề và nội dung nằm hoàn toàn trên slide. |- Tài nguyên xử lý: File video 90 phút rất nặng, hệ thống có bị quá tải (timeout) hoặc tốn nhiều chi phí API khi bóc tách ảnh/âm thanh không?
-- Độ chính xác OCR: Ảnh slide giảng viên quay mờ/chất lượng thấp thì AI có đọc đúng công thức/chữ không?|
-| 2 |Tự động hóa tạo bộ Flashcard ôn thi từ nhiều tài liệu |- Giải quyết Bottleneck khổng lồ (giảm từ 4-5 tiếng cắt dán thủ công xuống còn 10 phút)
-- Rủi ro kỹ thuật thấp, dễ làm ra MVP hoạt động mượt mà vì xử lý Text RAG hiện nay đã rất phổ biến và rẻ |- Tính cạnh tranh: Hiện tại NotebookLM, Quizlet, Knowt đã làm chức năng này rất tốt. Sản phẩm tự build có gì thực sự khác biệt để sinh viên chọn dùng |
-| 3 | Trợ lý so sánh giá và tóm tắt review TMĐT| Nhu cầu cực kỳ sát thực tế và diễn ra thường xuyên. Giải quyết tốt rủi ro mua hớ và nỗi đau "quá tải thông tin" khi phải đọc hàng ngàn review rác | - Khả năng lấy dữ liệu: Các sàn như Shopee, Lazada có cơ chế chống crawl (Anti-bot) cực mạnh, dễ bị chặn API
-- Voucher động: Mã giảm giá thường phụ thuộc vào cấp độ tài khoản của từng user, AI rất khó tính ra "giá cuối cùng" chính xác nếu không có quyền đăng nhập|
+| 1 |Tra cứu mốc thời gian trong Video bài giảng |một điều mà tool lớn (NotebookLM, YouTube) chưa làm tốt: video học nội bộ (LMS/Drive) không có phụ đề và nội dung nằm hoàn toàn trên slide. |- Tài nguyên xử lý: File video 90 phút rất nặng, hệ thống có bị quá tải (timeout) hoặc tốn nhiều chi phí API khi bóc tách ảnh/âm thanh không? - Độ chính xác OCR: Ảnh slide giảng viên quay mờ/chất lượng thấp thì AI có đọc đúng công thức/chữ không?|
+| 2 |Tự động hóa tạo bộ Flashcard ôn thi từ nhiều tài liệu |- Giải quyết Bottleneck khổng lồ (giảm từ 4-5 tiếng cắt dán thủ công xuống còn 10 phút)- Rủi ro kỹ thuật thấp, dễ làm ra MVP hoạt động mượt mà vì xử lý Text RAG hiện nay đã rất phổ biến và rẻ |- Tính cạnh tranh: Hiện tại NotebookLM, Quizlet, Knowt đã làm chức năng này rất tốt. Sản phẩm tự build có gì thực sự khác biệt để sinh viên chọn dùng |
+| 3 | Trợ lý so sánh giá và tóm tắt review TMĐT| Nhu cầu cực kỳ sát thực tế và diễn ra thường xuyên. Giải quyết tốt rủi ro mua hớ và nỗi đau "quá tải thông tin" khi phải đọc hàng ngàn review rác | - Khả năng lấy dữ liệu: Các sàn như Shopee, Lazada có cơ chế chống crawl (Anti-bot) cực mạnh, dễ bị chặn API- Voucher động: Mã giảm giá thường phụ thuộc vào cấp độ tài khoản của từng user, AI rất khó tính ra "giá cuối cùng" chính xác nếu không có quyền đăng nhập|
 
 ### Problem Card #1
 
@@ -49,16 +46,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Job Story | Khi ôn tập lại kiến thức từ video bài giảng trước kỳ thi, tôi muốn tìm ra chính xác phân đoạn giảng viên hướng dẫn bài tập hoặc giảng lý thuyết, để không phải mất hàng giờ tua đi tua lại tìm kiếm thủ công |
 | Actor | Sinh viên đại học |
 | Thời điểm / bối cảnh | Vào giai đoạn ôn thi cuối kỳ |
-| Quy trình hiện tại (3–7 bước) | 
-1. Mở file video bài giảng dung lượng lớn (90–120 phút) trên nền tảng lưu trữ
-
-2. Di chuyển thanh trượt thời gian (seek bar) dọc theo tiến trình video để tìm kiếm phân đoạn nội dung cần thiết
-
-3. Phát video kiểm tra từng phân đoạn, lặp lại thao tác tua đi tua lại khi chưa đúng nội dung
-
-4. Ghi chép thủ công các mốc thời gian (timestamp) tương ứng ra tài liệu ghi chú cá nhân để tra cứu cho các lần tiếp theo
-
-5. Lặp lại chu trình thao tác này đối với hệ thống video bài giảng của các môn học khác|
+| Quy trình hiện tại (3–7 bước) | 1. Mở file video bài giảng dung lượng lớn (90–120 phút) trên nền tảng lưu trữ 2. Di chuyển thanh trượt thời gian (seek bar) dọc theo tiến trình video để tìm kiếm phân đoạn nội dung cần thiết 3. Phát video kiểm tra từng phân đoạn, lặp lại thao tác tua đi tua lại khi chưa đúng nội dung 4. Ghi chép thủ công các mốc thời gian (timestamp) tương ứng ra tài liệu ghi chú cá nhân để tra cứu cho các lần tiếp theo 5. Lặp lại chu trình thao tác này đối với hệ thống video bài giảng của các môn học khác|
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2 & 3 tua video thủ công ngốn từ 30 đến 45 phút để tra cứu thông tin|
 | Impact (nếu không giải thì sao) | Mất 30 đến 45 phút cho việc tìm kiếm thông tin của một 1 môn học. Một kỳ thi nhiều môn học sẽ tốn nhiều giờ đồng hồ cho việc tìm kiếm |
 | Success metric (baseline → target) | Rút ngắn thời gian tìm đúng đoạn video cần học từ 30 phút tua thủ công xuống dưới 30 giây|
@@ -81,12 +69,7 @@ HIỆN TẠI — 45 phút
 | Job Story | Khi cần ghi nhớ hàng trăm khái niệm và định nghĩa rải rác trong tài liệu trước kỳ thi, sinh viên muốn gom nhóm và hệ thống hóa nội dung thành các thẻ câu hỏi - đáp án ngắn gọn, để ôn tập dễ dàng hơn|
 | Actor |Sinh viên đại học |
 | Thời điểm / bối cảnh | Vào 2 tuần cao điểm trước kỳ thi cuối kỳ|
-| Quy trình hiện tại (3–7 bước) |1. Mở 4–6 file tài liệu (slide, PDF, ghi chú)
-2. Đọc lướt từng chương tìm định nghĩa, công thức quan trọng
-3. Copy đoạn văn bản chứa khái niệm cốt lõi
-4. Viết thủ công câu hỏi vào mặt trước thẻ Flashcard
-5. Viết đáp án/giải thích vào mặt sau
-6. Lặp lại thao tác cắt dán cho 120–150 thẻ/môn |
+| Quy trình hiện tại (3–7 bước) |1. Mở 4–6 file tài liệu (slide, PDF, ghi chú) 2. Đọc lướt từng chương tìm định nghĩa, công thức quan trọng 3. Copy đoạn văn bản chứa khái niệm cốt lõi 4. Viết thủ công câu hỏi vào mặt trước thẻ Flashcard 5. Viết đáp án/giải thích vào mặt sau 6. Lặp lại thao tác cắt dán cho 120–150 thẻ/môn |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3, 4, 5 — Chọn lọc khái niệm và viết thủ công từng thẻ flashcard, mất khoảng 4 đến 5 giờ cho mỗi môn học|
 | Impact (nếu không giải thì sao) | Mất nhiều thời gian làm thủ công gây mệt mỏi, dễ nản chí và bỏ cuộc trước khi kịp ôn tập; thiếu thời gian cho các môn học khác|
 | Success metric (baseline → target) |Giảm tổng thời gian tạo bộ 150 flashcard từ 5 giờ xuống dưới 10 phút |
@@ -113,12 +96,7 @@ HIỆN TẠI — 300 phút
 | Job Story |Khi cần mua sắm một món đồ trực tuyến, tôi muốn tổng hợp nhanh giá cả và đánh giá từ nhiều trang khác nhau, để không phải mở hàng chục tab trình duyệt và mất hàng giờ so sánh.|
 | Actor |Người mua sắm trực tuyến |
 | Thời điểm / bối cảnh |Khi phát sinh nhu cầu mua các sản phẩm có giá trị hoặc trong các dịp sale lớn cần ra quyết định mua nhanh |
-| Quy trình hiện tại (3–7 bước) |1. Xác định tên sản phẩm hoặc mã model cụ thể cần mua.
-2. Mở ứng dụng hoặc trang web của 3–5 sàn thương mại điện tử khác nhau (Shopee, Lazada, Tiki, TikTok Shop...).
-3. Tìm kiếm từ khóa trên từng sàn, lọc kết quả theo mức giá và số lượt bán.
-4. Mở 5–10 tab chi tiết sản phẩm, đọc thủ công hàng chục bình luận để lọc đánh giá ảo (seeding) và xem ảnh chụp thực tế.
-5. Thêm sản phẩm vào giỏ hàng ở từng sàn, thử áp dụng các mã giảm giá và phí vận chuyển để tính ra số tiền thanh toán cuối cùng.
-6. So sánh chéo kết quả giữa các sàn để chốt đơn hàng có giá tốt và độ uy tín cao nhất. |
+| Quy trình hiện tại (3–7 bước) |1. Xác định tên sản phẩm hoặc mã model cụ thể cần mua. 2. Mở ứng dụng hoặc trang web của 3–5 sàn thương mại điện tử khác nhau (Shopee, Lazada, Tiki, TikTok Shop...). 3. Tìm kiếm từ khóa trên từng sàn, lọc kết quả theo mức giá và số lượt bán. 4. Mở 5–10 tab chi tiết sản phẩm, đọc thủ công hàng chục bình luận để lọc đánh giá ảo (seeding) và xem ảnh chụp thực tế. 5. Thêm sản phẩm vào giỏ hàng ở từng sàn, thử áp dụng các mã giảm giá và phí vận chuyển để tính ra số tiền thanh toán cuối cùng. 6. So sánh chéo kết quả giữa các sàn để chốt đơn hàng có giá tốt và độ uy tín cao nhất. |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4 & 5 — Việc đọc đối chiếu bình luận thủ công và thử áp mã giảm giá ở từng nền tảng tiêu tốn từ 30 đến 45 phút|
 | Impact (nếu không giải thì sao) |Tiêu tốn nhiều thời gian vô ích, dễ bị quá tải thông tin, dễ gây quyết định sai lầm |
 | Success metric (baseline → target) | Giảm tổng thời gian khảo sát giá, đọc tóm tắt review và tìm ra link mua rẻ nhất từ 45 phút xuống dưới 2 phút|
