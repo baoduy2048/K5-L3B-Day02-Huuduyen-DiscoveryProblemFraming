@@ -7,8 +7,8 @@
 
 - Tên nhóm: Huuduyen
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Thiết lập hệ thống nhận diện tình trạng buồn ngủ của tài xế và cảnh báo sớm.
+- Quyết định cuối: Go
 
 ---
 
@@ -21,9 +21,9 @@
 | 1 | | | | | |
 | 2 | | | | | |
 | 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 4 | Lê Hải Lân | Khi tài xế rời vào trạng thái mệt mỏi, buồn ngủ vì cơ thể suy kiệt khi lái xe đường dài | Tài xế | Làm sao để nhận diện được giấc ngủ trắng do giấc ngủ trắng không thể hiện ở việc nhắm mắt | Nguyễn Bá Quang Huy |
+| 5 | Nguyễn Bảo Duy | Thu thập dữ liệu, tích hợp dữ liệu xây dựng hệ thống AI hỗ trợ ôn thi cho sinh viên | Sinh viên | Có thể dùng cái AI hiện hành, cấy dữ liệu vào để xây dựng chat bot trả lời | Nguyễn Bá Quang Huy |
+| 6 | Nguyễn Bá Quang Huy | Xây dựng hệ thống hỗ trợ chấm bài cho giáo viên | Giáo viên | Trên thị trường đã có nhiều công cụ sẵn có và đã hỗ trợ rất tốt | Nguyễn Bá Quang Huy |
 | 7 |Nguyễn Bảo Duy |Tra cứu mốc thời gian trong Video bài giảng |Sinh viên |Tốn thời gian để tìm kiếm nội dung trong video | |
 | 8 |Nguyễn Bảo Duy |Tự động hóa tạo bộ Flashcard ôn thi từ nhiều tài liệu|Sinh viên |Mất thời gian đọc từng tài liệu và tổng hợp kiến thức đưa vào flashcard | |
 | 9 |Nguyễn Bảo Duy |Trợ lý so sánh giá và tóm tắt review TMĐT |Người tiêu dùng |Tìm kiếm thủ công, tra cứu giá của các sản phẩm trên từng sàn thương mại điện tử  | |
