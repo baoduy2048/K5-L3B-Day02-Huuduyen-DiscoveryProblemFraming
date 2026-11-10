@@ -14,8 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Nguyễn Bảo Duy|2A202603890 | Nhóm trưởng|baoduy2048 |
 | 2 | Nguyễn Bá Quang Huy | 2A202603926 | Thành viên | quanghuynguyenba |
-| 3 | | | | |
-| 4 | | | | |
+| 3 | Lê Hải Lân | 2A202603915 | Thành viên | laaaaanleeeee |
  
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 

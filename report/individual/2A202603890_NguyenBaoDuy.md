@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Nguyễn Bảo Duy
+- MSSV: 2A202603890
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: Huuduyen
+- Link repo nhóm: https://github.com/baoduy2048/K5-L3B-Day02-Huuduyen-DiscoveryProblemFraming
 
 ---
 
@@ -28,11 +28,6 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | 6 |Lặp lại |Khi bước vào mùa khô hoặc giai đoạn cây cần dưỡng chất, tôi muốn tính toán chính xác lịch trình và lượng nước tưới dựa trên độ ẩm đất thực tế, để không phải vận hành hệ thống tưới thủ công cảm tính gây lãng phí nước| Chủ trang trại, hộ nông dân | Kiểm tra và bật/tắt thủ công hệ thống tưới 2–3 lần/ngày, kéo dài suốt 3–4 tháng|
 | 7 |Pain từ người khác |Khi phụ huynh liên tục nhắn tin hỏi về tình hình học tập và điểm số của con ngoài giờ làm việc, tôi muốn có sẵn các báo cáo tổng hợp trực quan để gửi đi, để không phải lục tìm sổ sách và trả lời dồn dập nhiều lần trong ngày | Giáo viên chủ nhiệm|Nhận từ 15 đến 20 tin nhắn hỏi về tình hình học tập của học sinh mỗi tuần từ phụ huynh |
 
-**Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
-
--
-
----
 
 ## 3. Top 3 Problem Cards + quy trình nháp (CP2)
 
@@ -40,9 +35,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 |Tra cứu mốc thời gian trong Video bài giảng |một điều mà tool lớn (NotebookLM, YouTube) chưa làm tốt: video học nội bộ (LMS/Drive) không có phụ đề và nội dung nằm hoàn toàn trên slide. | Tài nguyên xử lý: File video 90 phút rất nặng, hệ thống có bị quá tải (timeout) hoặc tốn nhiều chi phí API khi bóc tách ảnh/âm thanh không?
+Độ chính xác OCR: Ảnh slide giảng viên quay mờ/chất lượng thấp thì AI có đọc đúng công thức/chữ không?|
+| 2 |Tự động hóa tạo bộ Flashcard ôn thi từ nhiều tài liệu |Giải quyết Bottleneck khổng lồ (giảm từ 4-5 tiếng cắt dán thủ công xuống còn 10 phút)
+Rủi ro kỹ thuật thấp, dễ làm ra MVP hoạt động mượt mà vì xử lý Text RAG hiện nay đã rất phổ biến và rẻ |Tính cạnh tranh: Hiện tại NotebookLM, Quizlet, Knowt đã làm chức năng này rất tốt. Sản phẩm tự build có gì thực sự khác biệt để sinh viên chọn dùng |
+| 3 | Trợ lý so sánh giá và tóm tắt review TMĐT| Nhu cầu cực kỳ sát thực tế và diễn ra thường xuyên. Giải quyết tốt rủi ro mua hớ và nỗi đau "quá tải thông tin" khi phải đọc hàng ngàn review rác | Khả năng lấy dữ liệu: Các sàn như Shopee, Lazada có cơ chế chống crawl (Anti-bot) cực mạnh, dễ bị chặn API
+Voucher động: Mã giảm giá thường phụ thuộc vào cấp độ tài khoản của từng user, AI rất khó tính ra "giá cuối cùng" chính xác nếu không có quyền đăng nhập|
 
 ### Problem Card #1
 
@@ -116,20 +114,10 @@ HIỆN TẠI — 300 phút
 | Actor |Người mua sắm trực tuyến |
 | Thời điểm / bối cảnh |Khi phát sinh nhu cầu mua các sản phẩm có giá trị hoặc trong các dịp sale lớn cần ra quyết định mua nhanh |
 | Quy trình hiện tại (3–7 bước) |1. Xác định tên sản phẩm hoặc mã model cụ thể cần mua.
-
-
 2. Mở ứng dụng hoặc trang web của 3–5 sàn thương mại điện tử khác nhau (Shopee, Lazada, Tiki, TikTok Shop...).
-
-
 3. Tìm kiếm từ khóa trên từng sàn, lọc kết quả theo mức giá và số lượt bán.
-
-
 4. Mở 5–10 tab chi tiết sản phẩm, đọc thủ công hàng chục bình luận để lọc đánh giá ảo (seeding) và xem ảnh chụp thực tế.
-
-
 5. Thêm sản phẩm vào giỏ hàng ở từng sàn, thử áp dụng các mã giảm giá và phí vận chuyển để tính ra số tiền thanh toán cuối cùng.
-
-
 6. So sánh chéo kết quả giữa các sàn để chốt đơn hàng có giá tốt và độ uy tín cao nhất. |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4 & 5 — Việc đọc đối chiếu bình luận thủ công và thử áp mã giảm giá ở từng nền tảng tiêu tốn từ 30 đến 45 phút|
 | Impact (nếu không giải thì sao) |Tiêu tốn nhiều thời gian vô ích, dễ bị quá tải thông tin, dễ gây quyết định sai lầm |
@@ -153,30 +141,24 @@ HIỆN TẠI — 45 phút
 
 - Card số: 1
 - Vì sao: vì đây là vấn đề tôi đã từng gặp phải, và mong muốn đưa ra một giải pháp để giúp sinh viên ôn tập tốt hơn
-- Câu hỏi muốn nhóm phản biện:
+- Câu hỏi muốn nhóm phản biện: thời gian thực tế có thể rút ngắn là bao nhiêu 
 
-### AI đã phản biện card thế nào
 
-| Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
-|---|---|---|
-| | | |
-
----
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
+| Pitch Problem Card | Tôi đã trình bày 3 problem chính của mình| giúp nhóm hiểu rõ các problem mà mình đưa ra|
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt:liệu AI có cần thiết cho vấn đề này không | giúp nhóm quyết định xem lại sự cần thiết của AI cho tửng problem|
 | Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Gom cluster / cây OST |Nhóm các problem cùng bản chất, như giáo dục, đời sống |dễ dàng đánh giá các problems |
+| Chọn candidate problem |Tham gia đánh giá problems dựa trên các tiêu chí cốt lõi như cost, lattency, mức độ can thiệp, điểm khác biệt,... |Lựa chọn ra được 1 problem tốt nhất là nhận diện tài xê buồn ngủ khi đi xe đường dài |
+| Kiểm chứng / research |research 1 số công nghệ sẵn có để ứng dụng cho problem |tìm ra được một số hướng đi, tìm ra một số căn cứ chứng minh tính khả thi của dự án |
+| Quy trình nhóm |phân tích quy trình sau khi có giải pháp |cải thiện, khắc phục bottleneck |
+| Problem Statement |Tham gia xác định actor, nhu cầu và vấn đề cốt lõi | Hoàn thiện Problem Statementv1|
+| Mức can thiệp AI | đánh giá mức độ sử dụng AI| lựa chọn workflow để can thiệp|
+| Quyết định | Tham gia thảo luận quyết định tiếp tục, điều chỉnh hoặc loại bỏ problem|Thống nhất hướng triển khai của nhóm |
 
 ---
 
@@ -184,9 +166,9 @@ HIỆN TẠI — 45 phút
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
+| CP1 Scan | gợi ý thêm đề tài tương tự|đưa ra rất nhiều đề tài tương tự |tuy nhiên các đề tài tương đối trừu tượng hoặc không thực tế | đi sâu vào một số problem, thu hẹp user|
+| CP2 Problem Card |đánh giá problem card |đánh giá theo format mẫu, chỉ ra những bước thiếu ở quy trình | bổ sung một số quy trình vô nghĩa| bổ sung một số bước thực sự quan trọng cho quy trình|
+| CP4 Research | tìm kiếm các bài báo liên quan|tìm kiếm rất nhanh và đầy đủ các bài báo liên quan | đưa ra một số link không có thật| tiến hành kiểm chứng các đường link url và nội dung bài báo, github để tiến hành đưa vào report|
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
@@ -198,19 +180,19 @@ HIỆN TẠI — 45 phút
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Các thành viên đều có các ý tưởng trong các vấn đề khác nhau, một số problem khá thiết thực hướng đến lượng user lớn như trường học. Bên cạnh đó cũng có các đề tài hướng đến nhóm đối tượng nhỏ hơn như người nông dân, tài xế đường dài.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Nhóm xử lý tương đối tốt , phân tích chi tiết từng problem
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+tôi đã thay đổi ý tưởng về problem của mình, từ một ứng dụng hướng đến nhóm đối tượng nhỏ và ứng dụng chỉ trong 1 vấn đề duy nhất mở rộng ra nhóm đối tượng rộng hơn và bổ sung thêm các tính năng để hoàn thiện
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+kết quả kiểm chứng khá giống với những thông tin đã được đưa ra ở problem card
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+khó khăn khi xác định quy trình đầy đủ, chi tiết nhưng không bị dài dòng và phải chỉ ra chính xác bottleneck
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại tôi sẽ xem xét lại problem của bản thân, xác định rõ nhóm người dùng phù hợp và các tính năng mong muốn
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+problem của nhóm là phát hiện tài xế đường dài có hiện tượng ngủ gật khi đang tham gia giao thông, quy trình hiện tại tương đối phụ thuộc vào người tài xế. Nhóm sử dụng các metric chính để đánh giá bao gồm phát hiện đúng, tỷ lệ cảnh báo sai, thời gian phát hiện tài xế buồn ngủ. Ai chỉ có khả năng cảnh báo tài xế còn các quyết định trên đường đều do tài xế đưa ra cuối cùng. Mức can thiệp đó là CV + Temporal Analysis và các cơ chế cảnh báo theo quy tắc vì cần nhận diện và xác định khi nào đủ điều kiện cảnh báo qua thời gian thực. Nhóm quyết định theo đuổi hướng xây dựng hệ thống theo thời gian thực đồng thời kiểm thử, đánh giá độ tin cậy và hạn chế cảnh báo sai.
 ---
 
 ## 7. Tài liệu tham khảo
