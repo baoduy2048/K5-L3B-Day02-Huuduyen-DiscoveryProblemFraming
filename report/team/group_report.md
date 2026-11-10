@@ -353,8 +353,7 @@ Cách thiết kế để hạn chế rủi ro:
 | **Boundary** | AI không can thiệp vào hệ thống lái/phanh của xe. AI không kết luận tài xế buồn ngủ chỉ qua 1 cú ngáp hay 1 cái chớp mắt đơn lẻ. Nếu camera bị che khuất hoặc thiếu sáng trầm trọng, AI phải báo "Hệ thống không khả dụng"|
 | **AI intervention point** |Nằm ở bước số 4 và 5: AI can thiệp vào khâu phân tích dữ liệu video theo thời gian thực (ngay trên thiết bị trong cabin) và đối chiếu ngưỡng để kích hoạt cảnh báo, thay thế cho việc tài xế phải "tự cảm nhận" độ tỉnh táo của mình |
 | **Mức chọn** | Workflow|
-| **Rủi ro & người kiểm tra** |Rủi ro: Cảnh báo sai (False Positive) gây ức chế tâm lý khiến tài xế tắt thiết bị; hoặc bỏ sót (False Negative) gây tai nạn.
-Người kiểm tra: Tài xế kiểm tra chéo ngay lúc nhận cảnh báo + Quản lý đội xe hậu kiểm lại log video |
+| **Rủi ro & người kiểm tra** |Rủi ro: Cảnh báo sai (False Positive) gây ức chế tâm lý khiến tài xế tắt thiết bị; hoặc bỏ sót (False Negative) gây tai nạn. Người kiểm tra: Tài xế kiểm tra chéo ngay lúc nhận cảnh báo + Quản lý đội xe hậu kiểm lại log video |
 
 **Thay đổi so với v0 và lý do:**
 
