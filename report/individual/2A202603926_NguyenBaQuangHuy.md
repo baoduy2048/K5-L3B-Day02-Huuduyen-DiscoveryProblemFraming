@@ -155,16 +155,18 @@ Kiểm tra tính chính xác trước khi sử dụng
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Kết nối mọi người, phỏng vấn các thành viên về các dự án và đặt các câu hỏi về công nghệ sử dụng, tra cứu các tool liên quan hỗ trợ cho dự án, đặt ra các câu hỏi về tính khả thi | Mọi người trao đổi được thông tin với nhau, lằng nghe các ý tưởng, cùng phân tích ưu nhược điểm và đưa về phương án thống nhất là dự án AI nhận diện và cảnh báo sớm tài xế buồn ngủ. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Hiện nay có nhiều chatbot hỗ trợ nạp dữ liệu, từ đó AI sẽ tự động trả lời câu hỏi liên quan đến các dữ liệu đã nạp | Bạn Duy đã nhận ra được và suy nghĩ thêm phương án mở rộng |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Hỏi bạn Lân về dự án tích hợp AI theo dõi tình trạng sức khỏe cây trồng: Thiết lập hệ thống camera theo dõi như thế nào để có thể đánh giá đúng đắn nhất tình trạng cây trồng | Bạn Lân đồng ý với tôi về những nhược điểm về việc thiết đặt hệ thống camera làm sao cho hợp lý |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Hỏi bạn Lân về dự án tích hợp AI theo dõi và cảnh báo sớm tình trạng buồn ngủ khi lái xe của tài xế: Tình trạng giấc ngủ trắng không thể hiện ở việc nhắm mắt, vậy làm thế nào để nhận diện được tình trạng đó | Tôi và bạn Lân đã tìm hiểu và đưa ra các thống nhất về các dấu hiệu nhận diện giấc ngủ trắng, và cảnh báo nhầm còn hơn bỏ sót để tránh các tình huống đáng tiếc |
+| Nhận phản biện | Câu hỏi tôi nhận được: Sản phẩm tích hợp AI quét và chấm bài tự động hỗ trợ chấm bài cho giáo viên đã có nhiều trên thị trường | Tôi đã sửa gì: Tôi đã suy ngẫm lại và nghiên cứu thêm để tìm các giải pháp độc đáo hơn nếu muốn triển khai. |
+| Gom cluster / cây OST | Kết nối các phương án của mọi người trong nhóm, cùng mọi người phân tích rõ ràng về các lợi ích mà giải pháp của họ mang lại, đánh giá xem có đáng làm hay không | Cả nhóm cùng nhau nghiên cứu để đưa ra thống nhất về giải pháp chung cả nhóm sẽ theo |
+| Chọn candidate problem | Cả nhóm cùng làm việc để thống nhất lấy giải pháp tốt nhất của mọi người | Cả nhóm cùng làm việc để thống nhất lấy giải pháp tốt nhất của mọi người |
+| Kiểm chứng / research | Tôi đi thu thập các bài phỏng vấn về tình trạng buồn ngủ của tài xế | đưa ra được các ý kiến của tài xế, mức độ quan tâm của tài xế về tác hại của việc buồn ngủ khi lái xe, nắm được các kinh nghiệm xử lý và các quan điểm của tài xế nếu có AI can thiệp hỗ trợ |
+| Quy trình nhóm | Tôi thực hiện phân vai cho từng người, người nào làm việc nào | Cả nhóm làm việc tách biệt, rõ ràng công việc và trao đổi thông tin nhanh chóng |
+| Problem Statement | Tôi phản biện lại các thành phần khi các thành viên trình bày Problem statement của họ | Hỗ trợ cả nhóm trong xây dựng ý tưởng |
+| Mức can thiệp AI | Tôi đã dùng AI hỗ trợ research các bài báo, nhận định của tài xế, tìm giải pháp về thiết bị hỗ trợ cho dự án của các thành viên | Cả nhóm có cái nhìn sâu, rõ ràng về giải pháp của bản thân |
+| Quyết định | cả nhóm cùng quyết định | cả nhóm cùng quyết định |
 
 ---
 
