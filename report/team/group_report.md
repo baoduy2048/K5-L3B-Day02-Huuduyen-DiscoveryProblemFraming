@@ -24,9 +24,9 @@
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
+| 7 |Nguyễn Bảo Duy |Tra cứu mốc thời gian trong Video bài giảng |Sinh viên |Tốn thời gian để tìm kiếm nội dung trong video | |
+| 8 |Nguyễn Bảo Duy |Tự động hóa tạo bộ Flashcard ôn thi từ nhiều tài liệu|Sinh viên |Mất thời gian đọc từng tài liệu và tổng hợp kiến thức đưa vào flashcard | |
+| 9 |Nguyễn Bảo Duy |Trợ lý so sánh giá và tóm tắt review TMĐT |Người tiêu dùng |Tìm kiếm thủ công, tra cứu giá của các sản phẩm trên từng sàn thương mại điện tử  | |
 | 10 | | | | | |
 | 11 | | | | | |
 | 12 | | | | | |
@@ -349,12 +349,7 @@ Cách thiết kế để hạn chế rủi ro:
 | **Quy trình** |Bắt đầu lái xe → Camera ghi hình liên tục → AI phân tích chuỗi hành vi → Đạt ngưỡng nguy hiểm → Phát cảnh báo → Tài xế quyết định giảm tốc/nghỉ ngơi |
 | **Bottleneck** |Tài xế không thể tự nhận thức được khoảnh khắc ngủ gật chớp nhoáng hoặc sự suy giảm tập trung diễn ra từ từ. Đợi đến lúc tài xế tự nhận ra thì đã quá muộn |
 | **Impact** |Nguy cơ tai nạn giao thông nghiêm trọng gây thiệt hại sinh mạng và tài sản. Tăng chi phí bảo hiểm và rủi ro pháp lý cho doanh nghiệp vận tải |
-| **Success Metric** (baseline → target, cách đo) |Baseline: Hoàn toàn dựa vào cảm giác chủ quan của tài xế
-Target:
-(1) Recall ≥ 90% (bắt đúng các ca buồn ngủ).
-(2) False Alarm ≤ 1 lần/giờ lái xe.
-(3) Độ trễ (Latency) ≤ 2 giây từ lúc có biểu hiện đến lúc hú còi.
-Cách đo: Lắp camera chạy thử nghiệm thực tế nghiệm. Quản lý đội xe đối chiếu video log với thời điểm AI phát cảnh báo để tính các chỉ số |
+| **Success Metric** (baseline → target, cách đo) |Baseline: Hoàn toàn dựa vào cảm giác chủ quan của tài xế. Target: (1) Recall ≥ 90% (bắt đúng các ca buồn ngủ). (2) False Alarm ≤ 1 lần/giờ lái xe. (3) Độ trễ (Latency) ≤ 2 giây từ lúc có biểu hiện đến lúc hú còi. Cách đo: Lắp camera chạy thử nghiệm thực tế nghiệm. Quản lý đội xe đối chiếu video log với thời điểm AI phát cảnh báo để tính các chỉ số |
 | **Boundary** | AI không can thiệp vào hệ thống lái/phanh của xe. AI không kết luận tài xế buồn ngủ chỉ qua 1 cú ngáp hay 1 cái chớp mắt đơn lẻ. Nếu camera bị che khuất hoặc thiếu sáng trầm trọng, AI phải báo "Hệ thống không khả dụng"|
 | **AI intervention point** |Nằm ở bước số 4 và 5: AI can thiệp vào khâu phân tích dữ liệu video theo thời gian thực (ngay trên thiết bị trong cabin) và đối chiếu ngưỡng để kích hoạt cảnh báo, thay thế cho việc tài xế phải "tự cảm nhận" độ tỉnh táo của mình |
 | **Mức chọn** | Workflow|
